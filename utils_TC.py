@@ -48,7 +48,7 @@ def gen_data_potential_Y_observed(seed, N, T, d0 = 20, k = 5, case = 4):
     Omega = np.zeros((N, T, K), dtype = 'int')
     # eta = 0.5 
     # for generate Y
-    eta = 0.5 
+    eta = 0.5
     for i in range(N):
         for t in range(T+k):
             # generate X
