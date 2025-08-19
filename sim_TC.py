@@ -16,8 +16,8 @@ from utils_TC_cov import TensorCompletionCovariateProjected, P_Omega, trt_effect
 import sys
 
 def simulation(seed, N, T, case, d0 = 20, k = 5):
-    if case in [1, 2]: r1 = 4
-    if case in [6, 7]: r1 = 6
+    if case in [1, 2]: r1 = 4 # simple outcomes
+    if case in [3, 4]: r1 = 6 # complex outcomes
     # generate the observed potential outcomes
     Y_obs, XX, A, Omega, X0, Y_full = gen_data_potential_Y_observed(seed = seed, N = N, T = T,
                                   d0 = d0, k = k, case = case)
