@@ -15,6 +15,13 @@ from MC_utils import MC_gradient
 from utils_TC_cov import TensorCompletionCovariateProjected, P_Omega, trt_effect_avg
 import sys
 
+
+# Link the notation to the TC paper
+# Y_hat_MSM: HRMSM
+# Y_MC_hat_fold: CO-unfold
+# Y_hat_project_RDA_eyes: Tucker
+# Y_hat_project_RDA: CO-Tucker
+
 def simulation(seed, N, T, case, d0 = 20, k = 5):
     if case in [1, 2]: r1 = 4 # simple outcomes
     if case in [3, 4]: r1 = 6 # complex outcomes
